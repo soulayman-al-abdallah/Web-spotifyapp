@@ -1,0 +1,17 @@
+<!-- <p>artists-cards works!</p> -->
+
+<!-- <a [routerLink]="['/albums/',artist.id,artist.name]" ></a> -->
+
+<a [routerLink]='["/albums/",artist.id, artist.name]'>5555</a> 
+
+<div  class="card" style="width: 18rem;">
+    
+    <img class="card-img-top" src="{{imageShownLink}}" alt="Card image cap">
+   
+    <div class="card-body">
+      <h5 class="card-title">{{artist.name}}</h5>
+      <p class="card-text">{{artist.followers.total}} followers</p> 
+      <p>{{artist.popularity}}</p>
+      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+    </div>
+  </div>

@@ -1,0 +1,13 @@
+<p>artistsearch works!</p>
+
+
+<app-search-input   (searchContentChanged)= 'adib($event)'    ></app-search-input>
+
+<h1>--------------------------------------------------------------------------</h1>
+
+
+<app-artists-cards  *ngFor="let artist of artists" [artist]='artist' ></app-artists-cards>
+
+<!-- *ngIf='true' -->
+
+<h1>--------------------------------------------------------------------------</h1>
