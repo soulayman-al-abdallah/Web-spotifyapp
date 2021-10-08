@@ -35,9 +35,11 @@ import { SearchInputComponent } from './componentsOfPages/search-input/search-in
  
   ],
   imports: [
-    BrowserModule, FormsModule, AppRoutingModule, HttpClientModule
+    BrowserModule, FormsModule, AppRoutingModule, HttpClientModule,
   ],
   providers: [ApiCallService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  
+ }

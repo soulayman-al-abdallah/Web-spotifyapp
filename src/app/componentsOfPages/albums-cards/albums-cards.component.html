@@ -1,12 +1,16 @@
-<p>albums-cards works!</p>
+<!-- <p>albums-cards works!</p> -->
 
-<div  class="card" style="width: 18rem;">
+<div  class="card" style="width: 14rem; height: 24rem; margin:auto ; margin-bottom: 3rem;  border-color: rgb(150, 167, 152); ">
     
-    <img class="card-img-top" src="{{album.images[0].url}}" alt="Card image cap">
+    <img class="card-img-top" style="width: max; height: 12rem;" src="{{album.images[0].url}}" alt="Card image cap">
    
     <div class="card-body">
       <h5 class="card-title">{{album.artists[0].name}}</h5>
-      <p class="card-text">llalalalala</p>
-      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+      <!-- <p class="card-text">llalalalala</p> -->
+      <div> fff</div>
     </div>
+
+<div   >         <a href="{{album.artists[0].external_urls.spotify}}" class="btn btn-success" style="width: 14rem;" >Preview On Spotify</a>  </div>
+
+
   </div> 

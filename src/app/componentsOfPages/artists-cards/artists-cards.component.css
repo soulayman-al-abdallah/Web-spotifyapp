@@ -1,0 +1,10 @@
+.nounderline {
+    text-decoration: none !important;
+    color:rgb(29, 94, 40)
+  }
+
+
+  ngb-rating {
+    color: #88ff00;
+    font-size: 80px;
+}
