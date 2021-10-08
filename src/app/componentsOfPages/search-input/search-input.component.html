@@ -1,4 +1,6 @@
 <p>search-input works!</p>
-<input type="text" (keyup)="scream()" [(ngModel)]="searchContent"  placeholder="Search for an artist... ">
+<input id="searchBox" type="text"  [(ngModel)]="searchContent"  placeholder="Search for an artist... ">
+<!-- (keyup)="scream()" -->
+
 
 <button (click)='scream()' >click me </button>

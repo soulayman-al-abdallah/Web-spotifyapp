@@ -2,16 +2,23 @@
 
 <!-- <a [routerLink]="['/albums/',artist.id,artist.name]" ></a> -->
 
-<a [routerLink]='["/albums/",artist.id, artist.name]'>5555</a> 
+ 
 
-<div  class="card" style="width: 18rem;">
-    
-    <img class="card-img-top" src="{{imageShownLink}}" alt="Card image cap">
+<div [routerLink]='["/albums/",artist.id, artist.name]' class="card"  style="width: 14rem; height: 24rem; margin:auto ; margin-bottom: 3rem; ">
+    <!-- <a >Artist's Albums</a> -->
+    <img class="card-img-top" style="width: max; height: 12rem;" src="{{imageShownLink}}" alt="Card image cap">
    
     <div class="card-body">
-      <h5 class="card-title">{{artist.name}}</h5>
-      <p class="card-text">{{artist.followers.total}} followers</p> 
-      <p>{{artist.popularity}}</p>
+      <h5 ><a  [routerLink]='["/albums/",artist.id, artist.name]' class="nounderline" >{{artist.name}}</a></h5>
+      <!-- class="card-title" -->
+      <p class="card-text" style="font-size: 0.8em;">{{artist.followers.total}} followers</p> 
+      
+
+
+      <!-- <p class="card-text">{{artist.id}} id </p> -->
+      <p>{{artist.popularity}}</p> 
+      <!-- <ngb-rating [max]="5" [(rate)]="currentRating"  ></ngb-rating> -->
+      <h5>{{currentRating}}</h5>
       <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
     </div>
   </div>
