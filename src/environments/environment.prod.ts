@@ -1,3 +1,5 @@
 export const environment = {
-  production: true
+  production: true,
+  redirectUri  :"http://localhost:4200/"
 };
+

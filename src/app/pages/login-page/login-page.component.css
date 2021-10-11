@@ -1,0 +1,36 @@
+
+
+
+
+.spotifyLogo{
+
+
+border: none;
+font-size: vh;
+margin:  2rem 1rem 2rem 1rem;
+width: 4rem;
+height: 4rem;
+
+
+}
+
+.Loginbuttons{
+    background-color: rgb(234, 240, 237);
+   
+    height: 5rem;
+    width: 29rem;
+    vertical-align: middle;
+   font-size: 2rem;
+    border-radius: 4%;
+    border-style: inherit;
+    border-style:hidden;
+    padding-bottom: 8rem;
+}
+
+
+.button-position{
+
+    width: 100px; 
+    height: 100px; 
+    margin: 200px 150px 100px 400px;
+}

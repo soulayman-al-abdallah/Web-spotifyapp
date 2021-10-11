@@ -10,16 +10,15 @@ import { TokenManager } from '../services/utilities';
 export class AuthGuard implements CanActivate {
  
  constructor( private _router: Router){}
-  // private _token:TokenManager
+
  
   canActivate(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot):  boolean  {
-      if (TokenManager.getClientToken()){return true;}
-                                                  else return false;
-                                               }
-                                                // return true;
-                                                // this._router.navigate(['']);  
+      if (TokenManager.getClientToken()){return true;} 
+      else return false;
+    
+    }
         
                                       
                           

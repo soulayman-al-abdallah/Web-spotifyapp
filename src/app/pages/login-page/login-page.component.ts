@@ -42,20 +42,12 @@ export class LoginPageComponent implements OnInit {
     // get the query parameters and put it into a variable
     var params = this.getHashParams();
     if (params.access_token) {
-      // send the token to the local storage (it can be read from anywhere)
+      // send the token to the local storage 
       TokenManager.setClientToken(params.access_token)
-      this.router.navigate(['/artist' , ''])
+      this.router.navigate(['/artist', ''])
     }
-    //
+
   }
-
-  // if(params.access_token != null){
-  //   // send the token to the local storage (it can be read from anywhere)
-  //   TokenManager.setClientToken(params.access_token)
-  //   this.router.navigate(['/artist'])}
-
-
-
 
   redirectToSpotifyLogin() {
     window.location.href = this.loginUri;

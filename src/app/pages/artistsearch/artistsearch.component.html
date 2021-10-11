@@ -1,22 +1,16 @@
 
 
-<div>
-<app-search-input   (searchContentChanged)= 'adib($event)'    ></app-search-input>
-</div>
+ <div>
+ <app-search-input  (searchContentChanged)= 'change($event)' ></app-search-input>
+ </div>
 
-<!-- <h1>--------------------------------------------------------------------------</h1> -->
+ <br><br><br><br>
 
-<br><br>
-<br>
-<br>
-
-<div class="container" >
+ <div class="container" >
     <div class="row"  >
 
-<app-artists-cards class="col-sm" *ngFor="let artist of artists" [artist]='artist' ></app-artists-cards>
+    <app-artists-cards class="col-sm" *ngFor="let artist of artists" [artist]='artist' >
+    </app-artists-cards>
 
-    </div></div>
-
-<!-- *ngIf='true' -->
-
-<h1>--------------------------------------------------------------------------</h1>
+    </div>
+ </div>

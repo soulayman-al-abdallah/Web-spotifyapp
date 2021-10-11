@@ -15,25 +15,21 @@ export class ArtistsearchComponent implements OnInit {
 
 
 
-  adib(Input: string) {
-    this.searchContent = Input;
-    this.searchImages(this.searchContent);
-
-  }
+  change(Input: string) {
+                        this.searchContent = Input;
+                        this.searchImages(this.searchContent);
+                      }
 
 
   constructor(private _apiCaller: ApiCallService, private _router: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.searchImages(this.searchContent)
-
-  }
-
+                       this.searchImages(this.searchContent)
+                   }
 
   searchImages(query: string) {
-    this._apiCaller.getArtists(query).subscribe((data: any) => {
-      this.artists = data.artists.items
-    })
-  }
+                                this._apiCaller.getArtists(query)
+                                .subscribe((data: any) => {this.artists = data.artists.items})
+                              }
 
 }

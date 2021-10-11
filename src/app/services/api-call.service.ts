@@ -17,12 +17,13 @@ export class ApiCallService {
   constructor(private _http: HttpClient) { }
 
 
-
+// request the Spotify search artists API 
   getArtists(searchQuery: string) {
     return this._http.get(this.apiUrl + 'search?q=' + searchQuery + '&type=artist', { headers: this.headers })
   }
 
+  // request the Spotify search albums API 
+
   getAlbums(query : string) 
   { return this._http.get(this.apiUrl + 'artists/' + query + '/albums', { headers: this.headers }) }
-
 }
