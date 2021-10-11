@@ -1,10 +1,15 @@
 <!-- <p>albumsearch works!</p> -->
 
-<div   ><h2>{{artistName}}</h2>
-<h4>Albums</h4></div>
+<div  class="album-name" >
+    <h2>{{artistName}}</h2>
+    <h4>Albums</h4>
+</div>
 
 <br><br>
+
 <div class="container" >
     <div class="row" >
-<app-albums-cards class="col-sm" *ngFor='let album of albums' [album]= 'album'></app-albums-cards>
-</div></div>
+    <app-albums-cards class="col-sm" *ngFor='let album of albums' [album]= 'album'>
+    </app-albums-cards>
+    </div>
+</div>

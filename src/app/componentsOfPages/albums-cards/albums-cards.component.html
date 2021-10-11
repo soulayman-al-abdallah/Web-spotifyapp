@@ -1,16 +1,19 @@
-<!-- <p>albums-cards works!</p> -->
-
-<div  class="card" style="width: 14rem; height: 24rem; margin:auto ; margin-bottom: 3rem;  border-color: rgb(150, 167, 152); ">
+<div  class="card alb-card-style-1">
     
     <img class="card-img-top" style="width: max; height: 12rem;" src="{{album.images[0].url}}" alt="Card image cap">
    
     <div class="card-body">
-      <h5 class="card-title">{{album.artists[0].name}}</h5>
-      <!-- <p class="card-text">llalalalala</p> -->
-      <div> fff</div>
+      <h5 class="card-title">{{album.name}}</h5>
+    
+       <h4 class="alb-card-style-1-1" > 
+        {{album.artists[0].name}} <br>
+        {{album.release_date}} <br><br>
+        {{album.total_tracks}} tracks</h4>
+
     </div>
 
-<div   >         <a href="{{album.artists[0].external_urls.spotify}}" class="btn btn-success" style="width: 14rem;" >Preview On Spotify</a>  </div>
-
-
-  </div> 
+        <div>  <a href="{{album.artists[0].external_urls.spotify}}" 
+            class="btn btn-success alb-card-style-1-2" >
+            Preview On Spotify</a>  
+        </div>
+</div> 

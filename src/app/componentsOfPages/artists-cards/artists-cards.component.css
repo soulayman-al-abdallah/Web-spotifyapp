@@ -1,10 +1,80 @@
+.card-style{
+  border-color: rgb(163, 235, 177); 
+  width: 14rem; 
+  height: 22rem; 
+  margin:auto ; 
+  margin-bottom: 3rem;
+
+}
+
+.image-style-cus{
+
+  width: max; height: 10rem;
+}
+
+.card-text-cus{
+  font-size: 0.8em; 
+  color: rgb(113, 131, 79);
+}
+
+.artist-data{
+  width: 14rem; height: 8rem;
+}
+
+.artist-rating-1{
+
+  width: 14rem; height: 2rem;
+}
+.artist-rating-1-1{
+  margin-left: 2rem; 
+  margin-top: -0.4rem; 
+  font-size: 1.8rem;
+
+}
+.artist-rating-1-2{
+  margin-right: 3.5rem;  
+  margin-bottom: 1.5rem;
+
+}
+
+
 .nounderline {
     text-decoration: none !important;
-    color:rgb(29, 94, 40)
+    color:rgb(29, 94, 40);
+    font-size: 1em;
   }
 
 
   ngb-rating {
     color: #88ff00;
     font-size: 80px;
+}
+
+
+.svg1-red {
+  fill: red;
+}
+.svg1-orange {
+  fill: orange;
+}
+
+.svg1-yellow {
+  fill: yellow;
+}
+.svg1-greenyellow{
+  fill:greenyellow
+}
+.svg1-green {
+  fill: green;
+}
+
+.mouseOverFalse{
+background-color: rgba(0, 255, 255, 0.055);
+
+}
+
+.mouseOverTrue{
+/* background-color: rgba(0, 255, 255, 0.185); */
+background-color: rgba(0, 255, 255, 0.418);
+
 }

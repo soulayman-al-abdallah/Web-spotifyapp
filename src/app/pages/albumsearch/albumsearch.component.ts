@@ -18,19 +18,20 @@ export class AlbumsearchComponent implements OnInit {
   constructor(private _apiCaller2: ApiCallService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    console.log(this.artist_ID)
-    this.artist_ID = (this.route.snapshot.paramMap.get('id'))
-    this.artistName = (this.route.snapshot.paramMap.get('artistName'))
-    this.searchImages(this.artist_ID)
+                    console.log(this.artist_ID)
+                    //getting the artist id from the URL search query
+                    this.artist_ID = (this.route.snapshot.paramMap.get('id'))
+                    this.artistName = (this.route.snapshot.paramMap.get('artistName'))
+                    this.searchImages(this.artist_ID)
 
-  }
+                  }
 
   searchImages(query: string) {
-    this._apiCaller2.getAlbums(query).subscribe((data: any) => {
-      this.albums = data.items
-      console.log(this.albums)
-    })
-  }
+                              this._apiCaller2.getAlbums(query).subscribe((data: any) => {
+                                this.albums = data.items
+                                console.log(this.albums)
+                              })
+                            }
 
 
 

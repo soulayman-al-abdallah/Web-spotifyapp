@@ -4,16 +4,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from './auth/auth.guard';
 import { AlbumsearchComponent } from './pages/albumsearch/albumsearch.component';
 import { ArtistsearchComponent } from './pages/artistsearch/artistsearch.component';
-
-
 import { LoginPageComponent } from './pages/login-page/login-page.component';
 
 
 const routes: Routes = [
   { path: '', component: LoginPageComponent },
   { path: 'login', component: LoginPageComponent },
-  { path: 'artist/:slayquery', component: ArtistsearchComponent,canActivate: [AuthGuard]  },
-  // , canActivate: [AuthGuard] 
+  { path: 'artist/:slayquery', component: ArtistsearchComponent,canActivate: [AuthGuard]},
   { path: 'albums/:id/:artistName', component: AlbumsearchComponent },
 
 ]
