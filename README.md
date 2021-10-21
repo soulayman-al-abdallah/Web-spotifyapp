@@ -1,3 +1,7 @@
+Hello
+if you would like to test the app, it needs that your spotify account becomes registered on my spotify dashboard, so please just send it to me (soulayman.al.abdallah@gmail.com) via email.
+
+
 # App09
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.3.
